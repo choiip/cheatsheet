@@ -1,6 +1,6 @@
-#Vim
+# Vim
 
-###*Main*
+### *Main*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -10,7 +10,7 @@
 | V     | Enter "visual mode" per line
 | :     | “Last-line mode” where Vim expects you to enter a command such as to save the document.|
 
-###*Save and quit*
+### *Save and quit*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -22,14 +22,14 @@
 |ZZ	    |Write file, if modified, and quit Vim|
 |ZQ	    |Same as :q! Quits Vim without writing changes|
 
-###*Undo/Redo*
+### *Undo/Redo*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
 |u	    |undo the last operation.
 |Ctrl+r	|redo the last undo.
 
-###*Insert text*
+### *Insert text*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -39,7 +39,7 @@
 |o	    |Begin a new line below the cursor|
 |O	    |Begin a new line above the cursor|
 
-###*Delete(Cut) text*
+### *Delete(Cut) text*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -53,7 +53,7 @@
 |dd	    |delete line|
 |3dd	|delete three lines|
 
-###*Copy/Paste text*
+### *Copy/Paste text*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -61,7 +61,7 @@
 |p	    |paste storage buffer after current line|
 |P	    |paste storage buffer before current line|
 
-###*Search*
+### *Search*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -70,7 +70,7 @@
 |n          	|move to the next instance of the result from the search|
 |N	            |move to the previous instance of the result|
 
-###*Navigation*
+### *Navigation*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|
@@ -90,7 +90,7 @@
 |G	    |move to the end of the file|
 |gg	    |move to the beginning of the file.|
 
-###*Advance*
+### *Advance*
 
 | Shortcut Keys   |      Function      |
 |-----------------|:-------------------|

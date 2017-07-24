@@ -1,17 +1,15 @@
-#Mac
+# Mac
 
-###Modifier keys
-Command ⌘
-Shift ⇧
-Option ⌥
-Control ⌃
-Caps Lock ⇪
-Fn
-Eject (⏏)
+### Modifier keys
 
-###Screen Capture
-| Shortcut Key          | Function |
-|-----------------------|----------|
+|Command ⌘|Shift ⇧|Option ⌥|Control ⌃|Caps Lock ⇪|Fn|Eject (⏏)|
+|-|-|-|-|-|-|-|
+
+
+### Screen Capture
+
+| Shortcut Key          |      Function      |
+|-----------------------|--------------------|
 |Esc                    |Exit from capture mode|
 |Control-< The command below>|Save capture to clipboard instead of .png file on desktop
 |Shift-Command-3        |Full screen capture|
@@ -20,10 +18,10 @@ Eject (⏏)
 |Shift-Command-6        |Touch Bar capture|
 
 
-###Sleep, Logout, Shutdown
+### Sleep, Logout, Shutdown
 
-| Shortcut Key          | Function |
-|-----------------------|----------|
+| Shortcut Key          |      Function      |
+|-----------------------|--------------------|
 |Command-Eject          |Dialog to Reset, sleep or shutdown|
 |Control-Command-Eject  |Restart your Mac|
 |Option-Command-Eject   |Put your Mac to sleep|
@@ -31,7 +29,8 @@ Eject (⏏)
 |Shift-Command-Q        |Logout account|
 
 
-###Startup 
+### Startup 
+
 | Hold during startup   | Description |
 |-----------------------|-------------|
 |Shift (⇧)	|Start up in Safe Mode.
