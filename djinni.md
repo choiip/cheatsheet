@@ -4,7 +4,7 @@ interfaceName = interface +j +o {
     const constantA: i32 = 10;
 
     methodA(argumentA: i32): returnType;
-    methodB(): returnType;
+    methodB();
 
     static staticMethod(): returnType;
 }
@@ -16,12 +16,13 @@ interfaceName = interface +c {
     const constantA: i32 = 10;
 
     methodA(argumentA: i32): returnType;
-    methodB(): returnType;
+    methodB();
+    const methodC(): returnType;
 
     static staticMethod(): returnType;
 }
 ```
-- Create an interface in C++ (+c)), called by C++. C++ implement the methods.
+- Create an interface in C++ (+c)), called by Java and Obj-C. C++ implement the methods.
 
 # Records: like structs
 ```c
@@ -45,9 +46,9 @@ enumName = enum {
 
 | Data Type         |      Syntax          | C++ | Java | Obj-C |
 |-------------------|----------------------|-----|------|-------|
-|Boolean            |bool|
+|Boolean            |bool|bool|boolean|BOOL|
 |Primitives         |i8,i16,i32,i64,f32,f64|
-|Strings            |string|
+|Strings            |string|std::string|String|NSString|
 |Binary             |binary|std::vector<uint8_t>|byte[]|NSData|
 |Date               |date|chrono::system_clock::time_point|Date|NSDate|
 |List               |list&lt;type>|std::vector<T>|ArrayList|NSArray|
