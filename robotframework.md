@@ -10,13 +10,20 @@
 > pip install --no-cache-dir robotframework
 
 Robot framework report and log generator
-> rebot --version
-
-> pybot --version
+> robot --version
 
 ## Install Robot framework IDE (RIDE) 
-RIDE depends on wxPython
-> pip install robotframework-ride
+> pip install -U https://github.com/HelioGuilherme66/RIDE/archive/v1.7.2
+
+Note: RIDE depends on wxPython (Mac only)
+### Install wxPython 
+> pip install wxPython==4.0.1
+
+### Install PyPubSub 3.3.0 for Python 2
+> pip install PyPubSub==3.3.0
+
+### Run RIDE
+> ride.py
 
 ### Useful shortcut key
 | Shortcut Key          |      Function      |
@@ -51,8 +58,12 @@ https://www.youtube.com/watch?v=BJhBiT2xoK0
 https://pypi.org/project/robotframework-seriallibrary/
 
 ## Mobile Web & App test
+### Install pytest-runner
+> pip install pytest-runner
+
 ### Install AppiumLibrary
 > pip install robotframework-appiumlibrary
+
 ### Install Appium Server (or download and install Appium Desktop)
 > npm install -g appium
 
