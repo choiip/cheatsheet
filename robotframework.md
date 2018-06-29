@@ -13,7 +13,7 @@ Robot framework report and log generator
 > robot --version
 
 ## Install Robot framework IDE (RIDE) 
-> pip install -U https://github.com/HelioGuilherme66/RIDE/archive/v1.7.2
+> pip install -U https://github.com/HelioGuilherme66/RIDE/archive/v1.7.2.zip
 
 Note: RIDE depends on wxPython (Mac only)
 ### Install wxPython 
@@ -73,6 +73,25 @@ https://pypi.org/project/robotframework-seriallibrary/
 ### Alternative: Appium Desktop
 http://appium.io/downloads.html
 https://www.youtube.com/watch?v=IOSUBda2-g4
+
+### Android app test
+#### export .apk
+https://developer.android.com/studio/run/
+
+#### Launch UI Automator Viewer for Android testing
+> $ANDROID_SDK/tools/bin/uianimatorviewer
+
+### iOS app test
+#### Install Carthage
+> brew install carthage
+
+#### export .ipa
+https://wiki.genexus.com/commwiki/servlet/wiki?34616,HowTo%3A+Create+an+.ipa+file+from+XCode,
+
+#### More reading
+[iOS XCUITest on simulator](http://appium.io/docs/en/drivers/ios-xcuitest/)
+
+[iOS XCUITest on real devices](http://appium.io/docs/en/drivers/ios-xcuitest-real-devices/)
 
 ## Foundation of Robot Framework
 ### Variable
