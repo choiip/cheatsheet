@@ -53,6 +53,8 @@ https://www.youtube.com/watch?v=BJhBiT2xoK0
 ### Install SSHLibrary
 > pip install robotframework-sshlibrary
 
+Remark: For Mac user, if you import the SSHLibrary in your test suite, make sure the robot is running in 64 bit python
+
 ## Serial connection
 ### Install robotframework-seriallibrary
 https://pypi.org/project/robotframework-seriallibrary/
@@ -68,26 +70,28 @@ https://pypi.org/project/robotframework-seriallibrary/
 > npm install -g appium
 
 ### Launch Appium Server with appropiate arguments
-
+> To be confirmed
 
 ### Alternative: Appium Desktop
 http://appium.io/downloads.html
 https://www.youtube.com/watch?v=IOSUBda2-g4
+Through the appium desktop, it is easy to inspect the UI element for testing
 
 ### Android app test
-#### export .apk
+#### How to generate .apk
 https://developer.android.com/studio/run/
 
-#### Launch UI Automator Viewer for Android testing
+#### Useful tools: UI Automator Viewer for Android testing (Optional)
 > $ANDROID_SDK/tools/bin/uianimatorviewer
 
 ### iOS app test
 #### Install Carthage
 > brew install carthage
 
-#### export .ipa
+#### How to export .ipa
 https://wiki.genexus.com/commwiki/servlet/wiki?34616,HowTo%3A+Create+an+.ipa+file+from+XCode,
 
+For local testing, instead of exporting the .ipa file, the .app file is the alternative to start the app. For example 
 #### More reading
 [iOS XCUITest on simulator](http://appium.io/docs/en/drivers/ios-xcuitest/)
 
