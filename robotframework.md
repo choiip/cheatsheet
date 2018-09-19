@@ -22,6 +22,9 @@ Note: RIDE depends on wxPython (Mac only)
 ### Install PyPubSub 3.3.0 for Python 2
 > pip install PyPubSub==3.3.0
 
+### Install Pygments
+> pip install Pygments
+
 ### Run RIDE
 > ride.py
 
