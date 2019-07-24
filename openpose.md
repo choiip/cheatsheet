@@ -39,10 +39,36 @@ Git Clone the repository
 > cmake -DCMAKE_TOOLCHAIN_FILE=../../vcpkg/scripts/buildsystems/vcpkg.cmake -DBUILD_python=OFF -DUSE_LMDB=OFF -DUSE_LEVELDB=OFF ..
 > cmake -DCMAKE_INSTALL_PREFIX=${HOME}/3rd/nv_caffe --build . --config Release --target install -- -j 10
 
+
+settings.json for reference
+``` json
+{
+
+"cmake.configureArgs": [
+"-DCMAKE_TOOLCHAIN_FILE=${workspaceRoot}/../vcpkg/scripts/buildsystems/vcpkg.cmake",
+"-DBUILD_python=OFF",
+"-DUSE_LMDB=OFF",
+"-DUSE_LEVELDB=OFF"
+],
+
+"cmake.preferredGenerators": [
+"Unix Makefiles",
+"Ninja"
+],
+
+"C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
+
+"cmake.configureOnOpen": true,
+
+"cmake.buildDirectory": "${workspaceRoot}/build/${buildType}",
+
+}
+```
+
 After the build process success, the install folder will be appear in the build folder. 
 
 ## Build openpose
-Install the following packages by **apt-get install** for openpose
+Install the following packages by **apt-get install** for opencv
 
 1. libgtk2.0-dev 
 
@@ -54,32 +80,23 @@ Git Clone the repository
 
 [openpose]([https://github.com/CMU-Perceptual-Computing-Lab/openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose))
 
-> cmake -G"Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=${workspaceRoot}/../vcpkg/scripts/buildsystems/vcpkg.cmake -DDL_FRAMEWORK=NV_CAFFE -DBUILD_CAFFE=OFF -DCaffe_INCLUDE_DIRS=/home/hk010001/git/vcpkg/installed/x64-linux/include;/usr/include;/home/hk010001/git/nv_caffe/build/Release/include;/usr/local/cuda/include;/home/hk010001/git/vcpkg/installed/x64-linux/include/opencv;/home/hk010001/git/vcpkg/installed/x64-linux/include/openblas;${workspaceRoot}/../nv_caffe/build/Release/install/include -DCaffe_LIBS=${workspaceRoot}/../nv_caffe/build/Release/install/lib/libcaffe-nv.so ..
+> cmake -G"Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=${workspaceRoot}/../vcpkg/scripts/buildsystems/vcpkg.cmake -DDL_FRAMEWORK=NV_CAFFE -DBUILD_CAFFE=OFF -DCaffe_INCLUDE_DIRS=$HOME/git/vcpkg/installed/x64-linux/include;/usr/include;$HOME/git/nv_caffe/build/Release/include;/usr/local/cuda/include;$HOME/git/vcpkg/installed/x64-linux/include/opencv;$HOME/git/vcpkg/installed/x64-linux/include/openblas;${workspaceRoot}/../nv_caffe/build/Release/install/include -DCaffe_LIBS=${workspaceRoot}/../nv_caffe/build/Release/install/lib/libcaffe-nv.so ..
 
 settings.json for reference
 ``` json
 {
 
 "cmake.configureArgs": [
-
 "-DCMAKE_TOOLCHAIN_FILE=${workspaceRoot}/../vcpkg/scripts/buildsystems/vcpkg.cmake",
-
 "-DDL_FRAMEWORK=NV_CAFFE",
-
 "-DBUILD_CAFFE=OFF",
-
-"-DCaffe_INCLUDE_DIRS=/home/hk010001/git/vcpkg/installed/x64-linux/include;/usr/include;/home/hk010001/git/nv_caffe/build/Release/include;/usr/local/cuda/include;/home/hk010001/git/vcpkg/installed/x64-linux/include/opencv;/home/hk010001/git/vcpkg/installed/x64-linux/include/openblas;${workspaceRoot}/../nv_caffe/build/Release/install/include",
-
+"-DCaffe_INCLUDE_DIRS=${env:HOME}/git/vcpkg/installed/x64-linux/include;/usr/include;${env:HOME}/git/nv_caffe/build/Release/include;/usr/local/cuda/include;${env:HOME}/git/vcpkg/installed/x64-linux/include/opencv;${env:HOME}/git/vcpkg/installed/x64-linux/include/openblas;${workspaceRoot}/../nv_caffe/build/Release/install/include",
 "-DCaffe_LIBS=${workspaceRoot}/../nv_caffe/build/Release/install/lib/libcaffe-nv.so"
-
 ],
 
 "cmake.preferredGenerators": [
-
 "Unix Makefiles",
-
 "Ninja"
-
 ],
 
 "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
