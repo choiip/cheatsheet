@@ -1,4 +1,5 @@
 
+
 # Openpose installation from source (Ubuntu 18.04)
 ## Install build tools
 CMake >= 3.12
@@ -15,9 +16,11 @@ Install the following packages by **apt-get install** for opencv
 
 1. libgtk2.0-dev 
 
-2. pkg-config
+2. libgtkglext1 
 
-3. libcanberra-gtk-module
+3. libgtkglext1-dev
+
+4. pkg-config
 
 Git clone vcpkg from [GitHub]([https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg)) and build by the provided **./bootstrap-vcpkg.sh**
 
@@ -68,13 +71,9 @@ settings.json for reference
 After the build process success, the install folder will be appear in the build folder. 
 
 ## Build openpose
-Install the following packages by **apt-get install** for opencv
+Install the following packages by **apt-get install** for openpose
 
-1. libgtk2.0-dev 
-
-2. pkg-config
-
-3. libcanberra-gtk-module
+1. libcanberra-gtk-module
 
 Git Clone the repository
 
